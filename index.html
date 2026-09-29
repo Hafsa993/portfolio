@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hafsa Sheikh</title>
+  <meta name="description" content="Hafsa Sheikh, Computer Science master's student at ETH Zurich. I build and ship apps, and I like making software fast.">
+  <meta property="og:title" content="Hafsa Sheikh">
+  <meta property="og:description" content="Computer Science master's student at ETH Zurich. Apps, systems and performance work.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/salah-calendar.webp">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f766e'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='28' font-weight='700' fill='white' text-anchor='middle'%3EHS%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a class="brand" href="#top">Hafsa Sheikh</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button class="theme-toggle" type="button" aria-label="Switch colour theme">
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8 6 18M18 6l1.8-1.8"/></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11Z"/></svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero container" id="top">
+      <p class="eyebrow">Computer Science · ETH Zurich</p>
+      <h1>Hi, I'm Hafsa.<br><span class="muted">I build apps people use, and I like making software fast.</span></h1>
+      <p class="lead">
+        I'm a master's student in Computer Science at ETH Zurich, focusing on data management systems
+        and software engineering. I design, build and ship my own apps from the first sketch to the app store.
+      </p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#projects">View projects</a>
+        <a class="btn" href="assets/Hafsa_Sheikh_CV.pdf" download>Download CV</a>
+      </div>
+      <ul class="social">
+        <li><a href="https://github.com/Hafsa993" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/hafsa-sheikh-907557384" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="mailto:hafsasheikh203@gmail.com">Email</a></li>
+      </ul>
+    </section>
+
+    <!-- About -->
+    <section class="section container" id="about">
+      <h2 class="section-title">About</h2>
+      <div class="about">
+        <div class="about-text">
+          <p>
+            I'm based in Zurich and study Computer Science at ETH Zurich, where I also did my bachelor's.
+            My master's major is Data Management Systems, with a minor in Programming Languages &amp; Software Engineering.
+          </p>
+          <p>
+            I enjoy the whole path of a product: working out the data model, writing the tests, setting up CI,
+            and getting the app into people's hands. Three of my apps are live or about to launch.
+            At university I lean towards systems and performance: vectorising kernels by hand,
+            scheduling workloads in the cloud, and understanding what the hardware is actually doing.
+          </p>
+          <p>
+            Since 2024 I've been a teaching assistant for Digital Design and Computer Architecture,
+            helping students through their first steps with Verilog, MIPS assembly and FPGAs.
+          </p>
+        </div>
+        <dl class="facts">
+          <div><dt>Based in</dt><dd>Zurich, Switzerland</dd></div>
+          <div><dt>Studying</dt><dd>MSc Computer Science, ETH Zurich</dd></div>
+          <div><dt>Focus</dt><dd>Data systems, software engineering, performance</dd></div>
+          <div><dt>Languages</dt><dd>German (native), English (fluent), French (basic)</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section container" id="projects">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-intro">Apps I've designed, built and released myself.</p>
+
+      <div class="projects">
+        <article class="project">
+          <div class="project-media">
+            <img src="assets/img/salah-calendar.webp" alt="Salah Calendar banner: a calendar that schedules around your prayers" width="1024" height="512" loading="lazy">
+          </div>
+          <div class="project-body">
+            <h3>Salah Calendar</h3>
+            <p class="project-tagline">A calendar that schedules around your prayers.</p>
+            <p>
+              Most prayer apps show a timetable. Salah Calendar places the five daily prayers as real blocks
+              inside their valid time windows, around the meetings you actually have, and re-plans whenever your day changes.
+            </p>
+            <ul class="highlights">
+              <li>Two-way Google Calendar sync and cloud push reminders, built on Supabase Edge Functions</li>
+              <li>A constraint-based scheduling assistant that finds slots around events, prayers and protected time</li>
+              <li>Prayer-time engine with 15 calculation methods, tested against the <code>adhan</code> library</li>
+              <li>Offline-first PWA and Android app, 150+ automated tests</li>
+            </ul>
+            <ul class="tags">
+              <li>React</li><li>Supabase</li><li>PostgreSQL</li><li>Deno</li><li>PWA</li><li>Capacitor</li><li>Vitest</li>
+            </ul>
+            <!-- Set data-live="true" once salahcalendar.app is online. -->
+            <a class="project-link" href="https://salahcalendar.app" target="_blank" rel="noopener" data-live="false">salahcalendar.app</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-media">
+            <img src="assets/img/knowhouse.webp" alt="KnowHouse banner: share the chores, keep the know-how" width="1024" height="512" loading="lazy">
+          </div>
+          <div class="project-body">
+            <h3>KnowHouse</h3>
+            <p class="project-tagline">Share the chores. Keep the know-how.</p>
+            <p>
+              A family app for household tasks: assign and accept to-dos, earn points, climb the leaderboard
+              and keep instructions for how things are done at home. It started as a team project and is now published on Google Play.
+            </p>
+            <ul class="highlights">
+              <li>Real-time collaboration, shared calendar, personalised task recommendations and user profiles</li>
+              <li>200+ unit, provider and widget tests</li>
+              <li>CI/CD with GitHub Actions: every release is versioned, signed and uploaded to Google Play automatically</li>
+            </ul>
+            <ul class="tags">
+              <li>Flutter</li><li>Dart</li><li>Firebase</li><li>Firestore</li><li>GitHub Actions</li>
+            </ul>
+            <a class="project-link" href="https://getknowhouse.com" target="_blank" rel="noopener" data-live="true">getknowhouse.com</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-media">
+            <img src="assets/img/shax.webp" alt="Shax banner: the Somali board game" width="1024" height="512" loading="lazy">
+          </div>
+          <div class="project-body">
+            <h3>Shax</h3>
+            <p class="project-tagline">The traditional Somali board game.</p>
+            <p>
+              A digital version of Shax, a two-player strategy game related to Nine Men's Morris.
+              Play offline against the computer or a friend on the same device, in English, German or Somali.
+            </p>
+            <ul class="highlights">
+              <li>Minimax game AI with three difficulty levels</li>
+              <li>The full traditional rules, including the removal phase and the <em>Oodan</em> rule</li>
+              <li>One Flutter codebase for Android, iOS and the web, with automated signed releases</li>
+            </ul>
+            <ul class="tags">
+              <li>Flutter</li><li>Dart</li><li>Game AI</li><li>i18n</li><li>GitHub Actions</li>
+            </ul>
+            <a class="project-link" href="https://shax.app" target="_blank" rel="noopener" data-live="true">shax.app</a>
+          </div>
+        </article>
+        <!-- Real or AI goes here once it's ready: copy one of the <article class="project"> blocks above. -->
+      </div>
+
+      <h3 class="subsection-title">University work</h3>
+      <div class="cards">
+        <article class="card">
+          <h4>FastGATr</h4>
+          <p class="card-metric">1500× faster than naive C++ · 1.7–4.5× faster than the optimised PyTorch reference</p>
+          <p>
+            Optimised a geometric algebra transformer on Apple M1. Exploited structure-tensor sparsity with generated
+            kernels (about 140× fewer operations), added ILP, operator fusion and cache-aware weight repacking,
+            and hand-vectorised the hot loops with NEON intrinsics.
+          </p>
+          <ul class="tags"><li>C++</li><li>Python</li><li>ARM NEON SIMD</li></ul>
+        </article>
+
+        <article class="card">
+          <h4>Cloud workload scheduling</h4>
+          <p class="card-metric">Latency-sensitive and batch jobs sharing one cluster</p>
+          <p>
+            Built schedulers that co-locate memcached with PARSEC batch workloads. Measured resource interference
+            with iBench and PARSEC scalability, then used the results to schedule on a heterogeneous VM cluster
+            (static load) and on a single machine (dynamic load).
+          </p>
+          <ul class="tags"><li>Google Cloud</li><li>Kubernetes</li><li>Kops</li><li>Python</li></ul>
+        </article>
+
+        <article class="card">
+          <h4>Bachelor's thesis</h4>
+          <p class="card-metric">Grade 6.0 / 6</p>
+          <!-- Add the thesis title and a one-line summary here. -->
+          <p>
+            Written at ETH Zurich's Secure and Trustworthy Systems Group.
+          </p>
+          <ul class="tags"><li>Security</li><li>Systems</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experience & education -->
+    <section class="section container" id="experience">
+      <h2 class="section-title">Experience &amp; education</h2>
+      <ol class="timeline">
+        <li>
+          <p class="timeline-date">2025 – 2027</p>
+          <div>
+            <h3>MSc Computer Science <span class="at">· ETH Zurich</span></h3>
+            <p>Major in Data Management Systems, minor in Programming Languages &amp; Software Engineering.
+              Courses include Big Data, Cloud Computing Architecture, Advanced Systems Lab, Concepts of Object-Oriented Programming and AI in Education.</p>
+          </div>
+        </li>
+        <li>
+          <p class="timeline-date">2024 – 2026 <span class="muted">(spring)</span></p>
+          <div>
+            <h3>Teaching Assistant <span class="at">· ETH Zurich</span></h3>
+            <p>Digital Design and Computer Architecture. Guided students through 10 hands-on lab sessions on digital circuit design,
+              Verilog, MIPS assembly, FPGAs and system integration, and reviewed their lab submissions with feedback.</p>
+          </div>
+        </li>
+        <li>
+          <p class="timeline-date">2022 – 2025</p>
+          <div>
+            <h3>BSc Computer Science <span class="at">· ETH Zurich</span></h3>
+            <p>GPA 5.15 / 6. Bachelor's thesis at the Secure and Trustworthy Systems Group (6 / 6).
+              Courses include Parallel Programming, Systems Programming, Operating Systems, Computer Networks, Compiler Design,
+              Data Modeling and Databases, Information Retrieval and Machine Learning.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Skills -->
+    <section class="section container" id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills">
+        <div>
+          <h3>Languages</h3>
+          <ul class="tags">
+            <li>Java</li><li>Dart</li><li>C</li><li>C++</li><li>Python</li><li>JavaScript</li><li>SQL</li>
+            <li>OCaml</li><li>Haskell</li><li>Verilog</li><li>HTML/CSS</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Frameworks &amp; tools</h3>
+          <ul class="tags">
+            <li>Flutter</li><li>Firebase</li><li>React</li><li>Supabase</li><li>PostgreSQL</li><li>PyTorch</li>
+            <li>Kubernetes</li><li>Google Cloud</li><li>GitHub Actions</li><li>Git</li><li>Vivado</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section container contact" id="contact">
+      <h2 class="section-title">Contact</h2>
+      <p class="lead">Whether it's about a role, a project or one of my apps, I'd be glad to hear from you.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="mailto:hafsasheikh203@gmail.com">hafsasheikh203@gmail.com</a>
+        <a class="btn" href="https://www.linkedin.com/in/hafsa-sheikh-907557384" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/Hafsa993" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="assets/Hafsa_Sheikh_CV.pdf" download>Download CV</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year">2026</span> Hafsa Sheikh · Zurich</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
