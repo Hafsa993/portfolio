@@ -216,6 +216,8 @@ code { font-size: .9em; background: var(--tag-bg); padding: .1em .35em; border-r
 .card-metric { font-size: .9rem; font-weight: 600; color: var(--accent); }
 .card p:not(.card-metric) { font-size: .95rem; color: var(--text-muted); }
 .card .tags { margin-top: auto; margin-bottom: 0; }
+.card-links { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-top: 18px; }
+.card-links .project-link { margin-top: 0; }
 
 /* ---------- Timeline ---------- */
 .timeline { list-style: none; margin: 0; padding: 0; }
