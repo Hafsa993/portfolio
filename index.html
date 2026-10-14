@@ -103,6 +103,30 @@
       <h2 class="section-title">Projects</h2>
       <div class="projects">
         <article class="project">
+          <div class="project-media" style="--media-bg: #f6f4ef">
+            <img src="assets/img/real-or-ai.webp" alt="Real or AI? banner: ten images a day, can you spot the AI ones?" width="1024" height="512" loading="lazy">
+          </div>
+          <div class="project-body">
+            <h3>Real or AI?</h3>
+            <p class="project-tagline">Ten images a day. Can you spot the AI ones?</p>
+            <p>
+              A web game that tests whether you can tell real photos from AI-generated ones. Blitz mode gives you
+              5 seconds per image and 3 lives, and a daily challenge of 10 images is the same for everyone, with a score to share.
+            </p>
+            <ul class="highlights">
+              <li>A nightly pipeline takes public-domain photos and generates a matching AI "twin" for each with a vision model and FLUX, then normalises both so the file can't give the answer away</li>
+              <li>API on Cloudflare Workers with D1 and R2, running entirely on the free tier</li>
+              <li>Security built in: rate limits, hashed one-time sign-in codes, AI-moderated comments and a strict Content-Security-Policy</li>
+              <li>~120 unit and API tests plus Playwright end-to-end tests; every push that passes CI deploys automatically</li>
+            </ul>
+            <ul class="tags">
+              <li>TypeScript</li><li>Astro</li><li>Svelte</li><li>Hono</li><li>Cloudflare Workers</li><li>Workers AI</li><li>Playwright</li>
+            </ul>
+            <a class="project-link" href="https://realoraiquiz.com" target="_blank" rel="noopener" data-live="true">realoraiquiz.com</a>
+          </div>
+        </article>
+
+        <article class="project">
           <div class="project-media" style="--media-bg: linear-gradient(135deg, #e2f5fa, #7ed4f2)">
             <img src="assets/img/knowhouse.webp" alt="KnowHouse banner: share the chores, keep the know-how" width="1024" height="512" loading="lazy">
           </div>
