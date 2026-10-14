@@ -115,7 +115,7 @@
             </p>
             <ul class="highlights">
               <li>A nightly pipeline takes public-domain photos and generates a matching AI "twin" for each with a vision model and FLUX, then normalises both so the file can't give the answer away</li>
-              <li>API on Cloudflare Workers with D1 and R2, running entirely on the free tier</li>
+              <li>Serverless API on Cloudflare Workers (Hono) with a D1 database and R2 image storage</li>
               <li>Security built in: rate limits, hashed one-time sign-in codes, AI-moderated comments and a strict Content-Security-Policy</li>
               <li>~120 unit and API tests plus Playwright end-to-end tests; every push that passes CI deploys automatically</li>
             </ul>
